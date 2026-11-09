@@ -1,7 +1,6 @@
 const form = document.getElementById("form-incidencia");
 const lista = document.getElementById("lista");
 const filtroEstado = document.getElementById("filtro-estado");
-
 function obtenerIncidencias() {
   return JSON.parse(localStorage.getItem("incidencias") || "[]");
 }
