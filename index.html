@@ -14,23 +14,17 @@
 
   <main>
     <section class="card">
-      <h2>Registrar incidencia</h2>
-      <form id="form-incidencia">
-        <input type="text" id="titulo" placeholder="Título" required>
-        <textarea id="descripcion" placeholder="Descripción" required></textarea>
-        <select id="prioridad">
-          <option value="Baja">Prioridad baja</option>
-          <option value="Media" selected>Prioridad media</option>
-          <option value="Alta">Prioridad alta</option>
-        </select>
-        <button type="submit">Registrar</button>
-      </form>
-    </section>
-
-    <section class="card">
       <h2>Listado de incidencias</h2>
+      <label for="filtro-estado">Filtrar por estado:</label>
+      <select id="filtro-estado">
+        <option value="Todas">Todas</option>
+        <option value="Abierta">Abierta</option>
+        <option value="En proceso">En proceso</option>
+        <option value="Resuelta">Resuelta</option>
+      </select>
       <ul id="lista"></ul>
     </section>
+  </main>
   </main>
 
   <script src="app.js"></script>
