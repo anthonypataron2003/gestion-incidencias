@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Incidencias</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Gestión de Incidencias</h1>
+    <span id="version">v1.0.0</span>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Registrar incidencia</h2>
+      <form id="form-incidencia">
+        <input type="text" id="titulo" placeholder="Título" required>
+        <textarea id="descripcion" placeholder="Descripción" required></textarea>
+        <select id="prioridad">
+          <option value="Baja">Prioridad baja</option>
+          <option value="Media" selected>Prioridad media</option>
+          <option value="Alta">Prioridad alta</option>
+        </select>
+        <button type="submit">Registrar</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Listado de incidencias</h2>
+      <ul id="lista"></ul>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
