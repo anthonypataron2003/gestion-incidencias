@@ -1,0 +1,16 @@
+* { box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background: #f2f4f8; margin: 0; color: #222; }
+header { background: #1f3a68; color: #fff; padding: 16px 24px; display: flex; justify-content: space-between; align-items: center; }
+header h1 { margin: 0; font-size: 1.4rem; }
+#version { background: #fff; color: #1f3a68; padding: 4px 10px; border-radius: 12px; font-weight: bold; }
+main { max-width: 800px; margin: 24px auto; padding: 0 16px; }
+.card { background: #fff; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 1px 4px rgba(0,0,0,.1); }
+form { display: grid; gap: 10px; }
+input, textarea, select, button { padding: 10px; font-size: 1rem; border: 1px solid #ccc; border-radius: 6px; }
+button { background: #1f3a68; color: #fff; border: none; cursor: pointer; }
+button:hover { background: #274b88; }
+ul { list-style: none; padding: 0; margin: 0; }
+li { border-bottom: 1px solid #eee; padding: 12px 0; }
+li:last-child { border-bottom: none; }
+.estado { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: .8rem; background: #e0e7f5; }
+.vacio { color: #888; }
