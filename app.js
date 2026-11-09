@@ -28,23 +28,16 @@ function mostrarIncidencias() {
   lista.innerHTML = "";
 
   if (incidencias.length === 0) {
-    lista.innerHTML = '<li class="vacio">No hay incidencias registradas.</li>';
+        lista.innerHTML = '<li class="vacio">No hay incidencias registradas.</li>';
     return;
   }
 
   incidencias.forEach((inc) => {
     const li = document.createElement("li");
-    li.innerHTML = `
-      <strong>#${inc.id} - ${inc.titulo}</strong>
-      <span class="estado">${inc.estado}</span><br>
-      <small>Prioridad: ${inc.prioridad}</small>
-      <p>${inc.descripcion}</p>
-      <select onchange="cambiarEstado(${inc.id}, this.value)">
-        <option ${inc.estado === "Abierta" ? "selected" : ""}>Abierta</option>
-        <option ${inc.estado === "En proceso" ? "selected" : ""}>En proceso</option>
-        <option ${inc.estado === "Resuelta" ? "selected" : ""}>Resuelta</option>
-      </select>
-    `;
+       lista.innerHTML =
+      filtro === "Todas"
+        ? '<li class="vacio">No hay incidencias registradas.</li>'
+        : `<li class="vacio">No hay incidencias con estado "${filtro}".</li>`;
     lista.appendChild(li);
   });
 }
