@@ -4,8 +4,6 @@ Aplicación web simple para registrar y listar incidencias, desarrollada como ac
 
 ## Integrantes
 - Anthony Pataron
-- Héctor Guillermo Tenelema Iza
-- Jordy Rodrigo Vergara Morales
 
 ## Descripción
 Permite registrar incidencias (título, descripción, prioridad) y ver el listado con su estado. Los datos se guardan en el navegador mediante `localStorage`.
